@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+<h2>Владельцам</h2>
+    <ul>
+    {% for one in newsvlad_list %}
+    <li>
+        <h3>{{ one.title }}</h3>
+        <p>{{ one.body }} </p>
+    </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

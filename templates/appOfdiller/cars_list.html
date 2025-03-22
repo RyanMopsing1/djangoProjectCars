@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <h2>Автомобили в наличии</h2>
+    <ul>
+    {% for one in cars_list %}
+    <li>
+        <img src="{% static one.foto %}" alt="" width="150">
+        <p>{{ one.title }}</p>
+        <p>Комплектация {{ one.comp }} </p>
+        <p>ОБьем двигателя(л.с.) {{ one.objemLS }}</p>
+        <p>Цена {{ one.price }} руб.</p>
+    </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

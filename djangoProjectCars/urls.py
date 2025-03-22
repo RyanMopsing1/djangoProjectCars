@@ -21,5 +21,13 @@ from appOfdiller import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+path('pokup/',views.pokup.as_view(),name='pokup'),
+path('vladelcam/',views.vladelcam.as_view(),name='vladelcam'),
+
+path('vnalichii/',views.vnalichii.as_view(),name='vnalichii'),
+path('modelryad/',views.modelryad.as_view(),name='modelryad'),
+
+path('modelryad/<str:title>/<int:pk>/',views.modeldetail.as_view(),name='oneModel'),
+
 
 ]

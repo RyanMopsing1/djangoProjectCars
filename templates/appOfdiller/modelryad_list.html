@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<h1>Модельный ряд</h1>
+        <ul>
+    {% for one in modelryad_list %}
+    <li>
+        <img src="{% static one.foto %}" alt="" width="100%">
+        <a href="{{ one.get_absolute_url }}">
+        <h1>{{ one.title }}</h1>
+        </a>
+    </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

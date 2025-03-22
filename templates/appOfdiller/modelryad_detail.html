@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<h1>{{ modelryad.title }}</h1>
+<img src="{% static modelryad.foto %}" alt="" width="100%">
+    <h3>Выбор цветов</h3>
+    {% for one in modelryad.cvet.all %}
+        <p>{{ one.title }}</p>
+    {% endfor %}
+    <h3>Обьемы и лошадинные силы</h3>
+    {% for one in modelryad.objemLS.all %}
+        <p>{{ one.title }}</p>
+    {% endfor %}   
+    <h3>Комплекатции</h3>
+    {% for one in modelryad.comp.all %}
+        <p>{{ one.title }}</p>
+    {% endfor %}  
+    <h3>Информация</h3>
+    <p>{{ one.info }} </p>
+
+{% endblock %}
