@@ -41,7 +41,7 @@ class Users(models.Model):
     name = models.CharField(max_length=50, verbose_name='Имя клиента')
     telephone = models.IntegerField(verbose_name='Номер телефона')
     comment = models.TextField(verbose_name='Комментарий')
-    prover = models.BooleanField(verbose_name='Обработка данных', default=False)
+    prover = models.BooleanField(verbose_name='Обработка данных')
 
     def __str__(self):
         return self.name

@@ -1,15 +1,20 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-<h1>Модельный ряд</h1>
-        <ul>
+    <div id="modelryad">
+    <h1>Модельный ряд</h1>
+        <ul class="model-list">
     {% for one in modelryad_list %}
-    <li>
-        <img src="{% static one.foto %}" alt="" width="100%">
-        <a href="{{ one.get_absolute_url }}">
-        <h1>{{ one.title }}</h1>
+    <li class="model-item">
+        <img src="{% static one.foto %}" alt="" width="100%" class="model-image">
+        <a href="{{ one.get_absolute_url }}" class="model-link">
+        <h1 class="model-title">{{ one.title }}</h1>
         </a>
+    <p class="model-description">{{ one.description }}</p> 
     </li>
     {% endfor %}
     </ul>
+    </div>
+{% endblock %}
+{% block form %}
 {% endblock %}

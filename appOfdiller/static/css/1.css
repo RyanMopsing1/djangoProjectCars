@@ -1,0 +1,605 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px; /* Set a base font size here - Adjust as needed */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Styles */
+.header-container { /* New container to hold both lefthead and righthead */
+    display: flex;          /* Enable flexbox */
+    justify-content: space-between; /* Distribute space between the elements */
+    align-items: center;     /* Vertically align items in the center */
+    padding: 10px; /* Add padding around the entire header */
+}
+
+.lefthead,
+.righthead {
+    display: flex;          /* Enable flexbox within each header part */
+    align-items: center;     /* Vertically align items within each part */
+    padding: 10px;
+}
+
+.lefthead {
+    font-size: 1.5em;
+    /* No need to float */
+}
+
+.righthead {
+    /* No need to float or text-align */
+    flex-direction: row; /* Arrange h2 elements horizontally */
+}
+
+.lefthead img {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: auto; /* Remove fixed width */
+    height: 50px; /* Adjust height as needed */
+}
+
+.righthead h2 {
+    margin: 0 10px 0 0; /* Add spacing between h2 elements */
+    font-size: 1.5em; /* Adjust font size as needed */
+}
+/* Menu Styles */
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  clear: both;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  font-size: 1.1em; /* Relative font size for menu links */
+}
+
+.menu a:hover {
+  background-color: #555;
+}
+
+/* Content Styles */
+#content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#content h3 {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 1.4em; /* Relative font size for content headings */
+}
+
+#content p {
+  font-size: 1.1em; /* Relative font size for content paragraphs */
+}
+
+#content ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+#content li {
+  margin-bottom: 5px;
+}
+
+/* News Section Styles */
+#news-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#news-section h2 {
+    font-size: 1.7em;  /* Increased heading size */
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    font-size: 1.3em;  /* Increased title size */
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.news-body {
+    font-size: 1.1em;  /* Increased body size */
+    color: #777;
+}
+
+/* Form Styles */
+#form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space below the entire form */
+    width: 80%; /* Reduce the overall width of the form */
+    max-width: 500px; /* Optional: set a maximum width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#form .form-group {
+    margin-bottom: 15px;
+}
+
+#form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1em; /* Increased label size */
+}
+
+#form input[type="text"],
+#form input[type="tel"],
+#form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.1em; /* Increased input size */
+}
+
+#form textarea {
+    height: 100px;
+}
+
+#form .form-check {
+    margin-bottom: 15px;
+}
+
+#form .form-check-label {
+    font-weight: normal;
+    font-size: 1.1em; /* Increased checkbox label size */
+}
+
+#form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em; /* Increased button size */
+}
+
+#form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#form .errorlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    color: red;
+}
+
+#form .errorlist li {
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .lefthead,
+  .righthead {
+    float: none;
+    text-align: center;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+  }
+}
+/* Geely Content Styles */
+#geely-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#geely-content h1 {
+    font-size: 2.0em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.geely-section {
+    margin-bottom: 30px;
+}
+
+.geely-section h2 {
+    font-size: 1.6em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.geely-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7; /* Increased line height for readability */
+}
+
+.geely-features {
+    list-style: disc; /* Changed list style for better visual appeal */
+    padding-left: 20px;
+}
+
+.geely-features li {
+    margin-bottom: 8px;
+    font-size: 1.1em; /* Match paragraph font size for consistency */
+}
+/* Model List Styles */
+#modelryad {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space below the entire section */
+    text-align: center;
+
+}
+#modelryad h1 {
+font-size: 2em;
+
+}
+
+.model-list {
+    list-style: none;
+    padding: 0;
+    display: flex;          /* Arrange items in a row */
+    flex-wrap: wrap;      /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+.model-item {
+    width: 30%;            /* Adjust as needed to fit your layout */
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd; /* Subtle border around each model */
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add a transition for a hover effect */
+}
+
+.model-item:hover {
+    transform: translateY(-5px); /* Lift the item slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
+.model-image {
+    width: 100%;          /* Make images fill the container */
+    max-width: 300px;   /* Limit the maximum width of the images */
+    height: auto;        /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.model-link {
+    text-decoration: none;
+    color: #333;           /* Set a default link color */
+}
+
+.model-title {
+    font-size: 2.0em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.model-description {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive Design for Model List */
+@media (max-width: 768px) {
+    .model-item {
+        width: 45%;    /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .model-item {
+        width: 100%;    /* One item per row on the smallest screens */
+    }
+}
+/* Model Detail Page Styles */
+#model-detail {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.model-title {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.model-image-container {
+    text-align: center; /* Center the image */
+    margin-bottom: 20px;
+}
+
+.model-image {
+    width: 80%;       /* Make the image responsive */
+    max-width: 600px;  /* Limit the maximum width */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.model-section {
+    margin-bottom: 30px;
+}
+
+.model-section h2 {
+    font-size: 1.6em;
+    color: #444;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.color-options,
+.engine-options,
+.trim-levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between elements */
+}
+
+.color-option,
+.engine-option,
+.trim-level {
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 1.1em;
+    color: #555;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.engine-options p,
+.trim-levels p {
+    margin: 0;
+}
+
+.color-option:hover,
+.engine-option:hover,
+.trim-level:hover {
+    background-color: #ddd;
+}
+
+.model-info {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+}
+/* News Page Styles */
+#news-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#news-page h1 {
+    font-size: 2.0em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.news-articles {
+    list-style: none;
+    padding: 0;
+}
+
+.news-article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-article:hover {
+    transform: translateY(-3px);
+}
+
+.news-article-title {
+    font-size: 1.6em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.news-article-summary {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.news-article-link:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+/* Owners Page Styles */
+#owners-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#owners-page h1 {
+    font-size: 2.0em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.owners-articles {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Enable flexbox for the list */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.owners-article {
+    width: 30%; /* Each item takes approximately 1/3 of the space */
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.owners-article-content {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.owners-article-title {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.owners-article-body {
+    font-size: 1.0em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.owners-article-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.owners-article-link:hover {
+    background-color: #218838;
+}
+/* Cars In Stock Styles */
+#cars-in-stock {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#cars-in-stock h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cars-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.cars-table th,
+.cars-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add a subtle border between rows */
+}
+
+.cars-table th {
+    background-color: #f0f0f0; /* Light background for the header */
+    font-weight: bold;
+}
+
+.cars-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5; /* Alternate row colors for readability */
+}
+
+.car-image {
+    max-width: 120px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block; /* Prevent extra space below the image */
+}

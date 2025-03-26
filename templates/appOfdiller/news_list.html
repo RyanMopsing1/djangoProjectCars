@@ -1,12 +1,17 @@
 {% extends 'index.html' %}
 {% block content %}
-<h2>Покупателям</h2>
-    <ul>
+    <div id="news-page">
+<h1>Покупателям</h1>
+    <ul class="news-articles">
     {% for one in news_list %}
-    <li>
-        <h3>{{ one.title }}</h3>
-        <p>{{ one.body }} </p>
+    <li class="news-article">
+        <h2 class="news-article-title">{{ one.title }}</h2>
+        <p class="news-article-summary">{{ one.body }} </p>
+        
     </li>
     {% endfor %}
     </ul>
+    </div>
+{% endblock %}
+{% block form %}
 {% endblock %}

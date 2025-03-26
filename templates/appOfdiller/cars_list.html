@@ -1,16 +1,31 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
+    <div id="cars-in-stock">
     <h2>Автомобили в наличии</h2>
-    <ul>
+    <table class="cars-table">
+                <thead>
+                <tr>
+                    <th>Фото</th>
+                    <th>Модель</th>
+                    <th>Комплектация</th>
+                    <th>Объем двигателя (л.с.)</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            <tbody>
     {% for one in cars_list %}
-    <li>
-        <img src="{% static one.foto %}" alt="" width="150">
-        <p>{{ one.title }}</p>
-        <p>Комплектация {{ one.comp }} </p>
-        <p>ОБьем двигателя(л.с.) {{ one.objemLS }}</p>
-        <p>Цена {{ one.price }} руб.</p>
-    </li>
+    <tr>
+        <td><img src="{% static one.foto %}" alt="" class="car-image"></td>
+        <td>{{ one.title }}</td>
+        <td>{{ one.comp }} </td>
+        <td> {{ one.objemLS }}</td>
+        <td> {{ one.price }} руб.</td>
+    </tr>
     {% endfor %}
-    </ul>
+        </tbody>
+        </table>
+    </div>
+{% endblock %}
+{% block form %}
 {% endblock %}

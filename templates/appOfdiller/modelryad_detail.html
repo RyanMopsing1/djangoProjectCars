@@ -1,21 +1,41 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
-<h1>{{ modelryad.title }}</h1>
-<img src="{% static modelryad.foto %}" alt="" width="100%">
-    <h3>Выбор цветов</h3>
+    <div id="model-detail">
+<h1 class="model-title">{{ modelryad.title }}</h1>
+    <div class="model-image-container">
+<img src="{% static modelryad.foto %}" alt=""  class="model-image">
+    </div>
+    <section class="model-section">
+    <h2>Выбор цветов</h2>
+    <div class="color-options">
     {% for one in modelryad.cvet.all %}
-        <p>{{ one.title }}</p>
+        <span class="color-option">{{ one.title }}</span>
     {% endfor %}
-    <h3>Обьемы и лошадинные силы</h3>
+    </div>
+        </section>
+    <section class="model-section">
+    <h2>Обьемы и лошадинные силы</h2>
+     <div class="engine-options">
     {% for one in modelryad.objemLS.all %}
-        <p>{{ one.title }}</p>
+        <p class="engine-option">{{ one.title }}</p>
     {% endfor %}   
-    <h3>Комплекатции</h3>
+     </div>
+        </section>
+    <section class="model-section">
+    <h2>Комплекатции</h2>
+    <div class="trim-levels">
     {% for one in modelryad.comp.all %}
-        <p>{{ one.title }}</p>
+        <p class="trim-level">{{ one.title }}</p>
     {% endfor %}  
-    <h3>Информация</h3>
-    <p>{{ one.info }} </p>
+    </div>
+        </section>
+     <section class="model-section">
+    <h2>Информация</h2>
+    <p class="model-info"> {{ modelryad.info }} </p>
+     </section>
+    </div>    
 
+{% endblock %}
+{% block form %}
 {% endblock %}

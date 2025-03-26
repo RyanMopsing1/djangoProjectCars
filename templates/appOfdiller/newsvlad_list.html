@@ -1,12 +1,18 @@
 {% extends 'index.html' %}
 {% block content %}
-<h2>Владельцам</h2>
-    <ul>
+    <div id="owners-page">
+<h1>Владельцам</h1>
+    <ul class="owners-articles">
     {% for one in newsvlad_list %}
-    <li>
-        <h3>{{ one.title }}</h3>
-        <p>{{ one.body }} </p>
+    <li class="owners-article">
+     <div class="owners-article-content">
+        <h3 class="owners-article-title">{{ one.title }}</h3>
+        <p class="owners-article-body">{{ one.body }} </p>
+         </div>
     </li>
     {% endfor %}
     </ul>
+    </div>
+{% endblock %}
+{% block form %}
 {% endblock %}
