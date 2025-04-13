@@ -10,7 +10,8 @@ admin.site.register(News)
 admin.site.register(Newsvlad)
 admin.site.register(ModelRyad)
 admin.site.register(Users)
-
+admin.site.register(TestDrive)
+admin.site.register(CvetModels)
 
 
 

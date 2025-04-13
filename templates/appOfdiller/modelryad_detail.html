@@ -1,16 +1,22 @@
 {% extends 'index.html' %}
 {% load static %}
+    {% block head %}
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static '/css/1.css' %}">
+        <script src="{% static '/js/modelscvet.js' %}" defer></script>
+    {% endblock %}
 {% block content %}
     <div id="model-detail">
 <h1 class="model-title">{{ modelryad.title }}</h1>
     <div class="model-image-container">
-<img src="{% static modelryad.foto %}" alt=""  class="model-image">
+<img src="{% static modelryad.foto %}" alt=""  class="model-image" id="rephoto">
     </div>
     <section class="model-section">
     <h2>Выбор цветов</h2>
     <div class="color-options">
     {% for one in modelryad.cvet.all %}
-        <span class="color-option">{{ one.title }}</span>
+        <span class="color-option" id="{{ one.id }}" onclick="f1('{{ modelryad.title }}','{{ one.id }}')">{{ one.title }}</span>
     {% endfor %}
     </div>
         </section>
@@ -32,10 +38,12 @@
         </section>
      <section class="model-section">
     <h2>Информация</h2>
-    <p class="model-info"> {{ modelryad.info }} </p>
+    <p class="model-info"> {{ modelryad.info|linebreaksbr }} </p>
      </section>
     </div>    
 
 {% endblock %}
+{% block news %}
+{% endblock news %}
 {% block form %}
 {% endblock %}

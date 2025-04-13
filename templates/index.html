@@ -17,7 +17,7 @@
             <h2>"Китай-бабай"</h2>
         </div>
         <div class="righthead">
-            <h2>"Село Хуево, ул. Кукуева, палата №6"</h2>
+            <h2>Тобольск, 4 мкр, д 35б  |  </h2>
             <h2>+78005553535</h2>
         </div>
         </div>
@@ -26,10 +26,13 @@
             <a href="{% url 'modelryad' %}">Модели</a>
             <a href="{% url 'pokup' %}">Покупателям</a>
             <a href="{% url 'vladelcam' %}">Владельцам</a>
-            <a href="{% url 'vnalichii' %}">Вналичии</a>
+            <a href="{% url 'vnalichii' %}">В наличии</a>
         </div>
+        
     {% endblock %}
+    
     {% block content %}
+        <img src="{% static 'title.png' %}" alt="">
         <div id="content">
         <div id="geely-content">
         <h1>Купить автомобиль GEELY</h1>
@@ -63,13 +66,14 @@
         </div>
     {% endblock content %}
     {% block news %}
+        <h1>Покупателям</h1>
         <div id="news">
         <div id="news-section">
         <ul class="news-list">
     {% for i in news|slice:":3" %}
     <li class="news-item">
         <h3 class="news-title">{{ i.title }}</h3>
-        <p class="news-body">{{ i.body }} </p>
+        <p class="news-body">{{ i.body|linebreaksbr }} </p>
     </li>
     {% endfor %}
     </ul>

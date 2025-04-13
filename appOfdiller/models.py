@@ -77,3 +77,20 @@ class ModelRyad(models.Model):
         return f'{self.title}/{self.id}/'
 
 
+class TestDrive(models.Model):
+    title = models.ForeignKey(to=Modeli, verbose_name='Модель', on_delete=models.CASCADE)
+    name = models.CharField(max_length=50, verbose_name='Имя клиента')
+    telephone = models.IntegerField(verbose_name='Номер телефона')
+    comment = models.TextField(verbose_name='Комментарий')
+    prover = models.BooleanField(verbose_name='Обработка данных')
+
+    def __str__(self):
+        return self.name
+
+class CvetModels(models.Model):
+    title = models.ForeignKey(to=Modeli, verbose_name='Модель', on_delete=models.CASCADE)
+    cvet = models.ForeignKey(to=Cvet, verbose_name='Цвет', on_delete=models.CASCADE)
+    foto = models.FileField(verbose_name='Фото', upload_to='cars/', null=True, blank=True)
+
+    def __str__(self):
+        return str(self.title)

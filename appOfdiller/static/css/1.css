@@ -147,85 +147,99 @@ body {
     color: #777;
 }
 
-/* Form Styles */
+/* Общий контейнер формы */
 #form {
+    max-width: 600px; /* Ограничение ширины формы */
+    margin: 20px auto; /* Центрирование формы по горизонтали */
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Add space below the entire form */
-    width: 80%; /* Reduce the overall width of the form */
-    max-width: 500px; /* Optional: set a maximum width */
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #f8f9fa; /* Светлый фон для формы */
+    border: 1px solid #dee2e6; /* Тонкая граница */
+    border-radius: 5px; /* Скругленные углы */
 }
 
-#form h2 {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    color: #333;
+/* Элементы формы */
+#form-group {
+    margin-bottom: 15px; /* Отступ между элементами формы */
 }
 
-#form .form-group {
-    margin-bottom: 15px;
+/* Стилизация текстовых полей (input и textarea) */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Растянуть на всю ширину контейнера */
+    padding: 10px;
+    border: 1px solid #ced4da; /* Серая граница */
+    border-radius: 4px; /* Скругленные углы */
+    margin-top: 5px; /* Отступ сверху */
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину элемента */
+    font-size: 16px; /* Размер шрифта */
 }
 
-#form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 1.1em; /* Increased label size */
+/* Placeholder style (optional) */
+input::placeholder,
+textarea::placeholder {
+    color: #999; /* Цвет placeholder */
 }
 
-#form input[type="text"],
-#form input[type="tel"],
-#form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 1.1em; /* Increased input size */
-}
-
-#form textarea {
-    height: 100px;
-}
-
-#form .form-check {
-    margin-bottom: 15px;
-}
-
-#form .form-check-label {
-    font-weight: normal;
-    font-size: 1.1em; /* Increased checkbox label size */
-}
-
-#form button[type="submit"] {
-    background-color: #4CAF50;
+/* Более стильная кнопка отправки */
+.btn-success {
+    background: linear-gradient(to right, #28a745, #66bb6a); /* Градиент от зеленого к светло-зеленому */
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Увеличенные отступы */
     border: none;
-    border-radius: 4px;
+    border-radius: 8px; /* Более скругленные углы */
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1.1em; /* Increased button size */
+    font-size: 18px; /* Увеличенный размер шрифта */
+    font-weight: 600; /* Полужирный шрифт */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.2s, box-shadow 0.2s; /* Плавные переходы */
 }
 
-#form button[type="submit"]:hover {
-    background-color: #3e8e41;
+.btn-success:hover {
+    transform: translateY(-2px); /* Небольшой подъем при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Более сильная тень при наведении */
 }
 
-#form .errorlist {
-    list-style: none;
-    padding: 0;
+.btn-success:active {
+    transform: translateY(0); /* Убрать подъем при нажатии */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Меньшая тень при нажатии */
+}
+
+/* Сообщение об ошибке */
+.errorlist {
+    color: #dc3545; /* Красный цвет */
     margin-top: 5px;
-    color: red;
+    display: block; /* Занять всю ширину */
 }
 
-#form .errorlist li {
-    font-size: 0.9em;
+/* Стилизация checkbox и его метки */
+input[type="checkbox"] {
+    margin-right: 5px; /* Отступ справа от checkbox */
+}
+
+/* Ссылка в тексте согласия */
+#form-group p a {
+    color: #007bff; /* Синий цвет ссылки */
+    text-decoration: none; /* Убрать подчеркивание */
+}
+
+#form-group p a:hover {
+    text-decoration: underline; /* Подчеркивать ссылку при наведении */
+}
+
+/* Адаптивность для маленьких экранов (необязательно) */
+@media (max-width: 576px) {
+    #form {
+        padding: 10px; /* Меньше отступов на маленьких экранах */
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        font-size: 14px; /* Меньше шрифт на маленьких экранах */
+    }
+    .btn-success {
+        font-size: 14px;
+    }
 }
 
 /* Responsive Design */
@@ -375,7 +389,6 @@ font-size: 2em;
     font-size: 2.2em;
     color: #333;
     margin-bottom: 20px;
-    border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -492,71 +505,80 @@ font-size: 2em;
 .news-article-link:hover {
     background-color: #0056b3; /* Darker blue */
 }
-/* Owners Page Styles */
+/* Общий контейнер страницы "Владельцам" */
 #owners-page {
+    max-width: 1200px; /* Ограничьте ширину контента для лучшей читаемости */
+    margin: 20px auto; /* Центрируйте контент на странице */
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    font-family: Arial, sans-serif; /* Выберите приятный шрифт */
 }
 
+/* Заголовок страницы */
 #owners-page h1 {
-    font-size: 2.0em;
-    color: #333;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+    font-size: 2.5em;
+    color: #333; /* Темно-серый цвет */
+    text-align: center; /* Центрируйте заголовок */
+    margin-bottom: 30px;
 }
 
+/* Список статей для владельцев */
 .owners-articles {
-    list-style: none;
+    list-style: none; /* Уберите маркеры списка */
     padding: 0;
-    display: flex; /* Enable flexbox for the list */
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    justify-content: space-between; /* Distribute items evenly */
 }
 
+/* Отдельная статья */
 .owners-article {
-    width: 30%; /* Each item takes approximately 1/3 of the space */
-    margin-bottom: 40px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-bottom: 30px;
+    border: 1px solid #ddd; /* Добавьте тонкую границу */
+    border-radius: 8px; /* Скруглите углы */
+    overflow: hidden; /* Предотвратите выход контента за границы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Небольшая тень */
+    transition: box-shadow 0.3s ease; /* Плавная анимация тени */
 }
 
+.owners-article:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Усильте тень при наведении */
+}
+
+/* Контент статьи */
 .owners-article-content {
-    padding: 30px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
+/* Заголовок статьи */
 .owners-article-title {
     font-size: 1.8em;
-    color: #444;
-    margin-bottom: 15px;
-}
-
-.owners-article-body {
-    font-size: 1.0em;
     color: #555;
-    line-height: 1.8;
+    margin-bottom: 10px;
 }
 
-.owners-article-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #28a745;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+/* Тело статьи */
+.owners-article-body {
     font-size: 1.1em;
+    line-height: 1.6; /* Улучшите читаемость текста */
+    color: #666;
 }
 
-.owners-article-link:hover {
-    background-color: #218838;
+/* Дополнительные стили (например, для изображений) - добавьте их здесь */
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    #owners-page {
+        padding: 10px;
+    }
+
+    #owners-page h1 {
+        font-size: 2em;
+    }
+
+    .owners-article-title {
+        font-size: 1.5em;
+    }
+
+    .owners-article-body {
+        font-size: 1em;
+    }
 }
 /* Cars In Stock Styles */
 #cars-in-stock {
@@ -602,4 +624,110 @@ font-size: 2em;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: block; /* Prevent extra space below the image */
+}
+
+form {
+  display: flex; /* Включаем flexbox для формы */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  margin-bottom: 1em;
+}
+
+label {
+  margin-right: 0.5em; /* Отступ справа от лейбла */
+  font-weight: bold;
+  white-space: nowrap; /* Предотвращает перенос текста лейбла на новую строку */
+}
+
+input[type="text"],
+select,
+textarea {
+  flex: 1; /* Позволяет полю заполнить доступное пространство */
+  padding: 0.5em;
+  margin-right: 0.5em; /* Отступ справа от поля */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.7em 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Адаптивность (чтобы форма не вылезала за границы экрана на маленьких устройствах) */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column; /* Переключаемся на вертикальную колонку */
+    align-items: stretch; /* Растягиваем элементы по ширине */
+  }
+
+  label {
+    margin-right: 0; /* Убираем отступ у лейбла */
+    margin-bottom: 0.3em; /* Добавляем отступ снизу лейблу */
+    text-align: left; /* Выравниваем текст лейбла по левому краю */
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    margin-right: 0; /* Убираем отступ у поля */
+    margin-bottom: 0.7em; /* Добавляем отступ снизу полю */
+  }
+}
+/* Медиа-запрос для экранов больше мобильных */
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row; /* Возвращаем горизонтальное расположение для больших экранов */
+    justify-content: space-between; /* Равномерное распределение между элементами */
+    align-items: center;
+  }
+
+  .lefthead {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 10%; /* Возвращаем исходную ширину логотипа */
+  }
+
+  .lefthead h2 {
+    font-size: inherit; /* Возвращаем исходный размер шрифта */
+  }
+
+  .righthead {
+    flex-direction: row; /* Возвращаем горизонтальное расположение для больших экранов */
+    align-items: center;
+    text-align: left;
+  }
+
+  .righthead h2 {
+    font-size: inherit; /* Возвращаем исходный размер шрифта */
+    margin: 0 10px;
+  }
+
+  .menu {
+    flex-direction: row; /* Располагаем ссылки меню горизонтально */
+    justify-content: space-around; /* Равномерно распределяем ссылки */
+  }
+
+  .menu a {
+    display: inline-block; /* Разрешаем задавать ширину и высоту */
+    border-bottom: none; /* Убираем разделитель */
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .title-image-container {
+    width: 80%; /* Например, уменьшаем ширину на больших экранах */
+    margin: 0 auto; /* Выравниваем по центру */
+  }
 }

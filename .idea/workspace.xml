@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1a268b2-04e3-4993-aa5b-cab89a2c9c87" name="Changes" comment="css index not done">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appOfdiller/migrations/0010_testdrive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appOfdiller/migrations/0011_cvetmodels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appOfdiller/static/js/modelscvet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appOfdiller/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/appOfdiller/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appOfdiller/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/appOfdiller/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appOfdiller/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/appOfdiller/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appOfdiller/static/css/1.css" beforeDir="false" afterPath="$PROJECT_DIR$/appOfdiller/static/css/1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appOfdiller/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appOfdiller/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbOfdiller.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/dbOfdiller.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/appOfdiller/cars_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/appOfdiller/cars_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/appOfdiller/modelryad_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/appOfdiller/modelryad_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/appOfdiller/modelryad_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/appOfdiller/modelryad_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/appOfdiller/news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/appOfdiller/news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/appOfdiller/newsvlad_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/appOfdiller/newsvlad_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RyanMopsing1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RyanMopsing1/djangoProjectCars.git&quot;,
+    &quot;accountId&quot;: &quot;f8066499-58e2-4515-a81f-3758ce867ae8&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2u8Z1uZPxlNED4zz0y6SAcaCcO3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.djangoProjectCars.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/265930/Desktop/stud/django/djangoProjectCars/appOfdiller/static/js&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\265930\Desktop\stud\django\djangoProjectCars\appOfdiller\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\265930\Desktop\stud\django\djangoProjectCars\templates\appOfdiller" />
+      <recent name="C:\Users\265930\Desktop\stud\django\djangoProjectCars\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="djangoProjectCars" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoProjectCars" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="djangoProjectCars.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (djangoProjectCars)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://localhost:8000" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="djangoProjectCars" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoProjectCars" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="djangoProjectCars.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (djangoProjectCars)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://localhost:8000" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
+        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1a268b2-04e3-4993-aa5b-cab89a2c9c87" name="Changes" comment="" />
+      <created>1741631949602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741631949602</updated>
+      <workItem from="1741631950981" duration="143000" />
+      <workItem from="1741632238608" duration="109000" />
+      <workItem from="1741859218236" duration="7464000" />
+      <workItem from="1741866724468" duration="130000" />
+      <workItem from="1741866869925" duration="5664000" />
+      <workItem from="1741927922613" duration="4043000" />
+      <workItem from="1741932509443" duration="3596000" />
+      <workItem from="1741953352214" duration="737000" />
+      <workItem from="1742129700660" duration="1554000" />
+      <workItem from="1742227365479" duration="2358000" />
+      <workItem from="1742665829858" duration="11244000" />
+      <workItem from="1742677427179" duration="47000" />
+      <workItem from="1742735281694" duration="626000" />
+      <workItem from="1742739620181" duration="7198000" />
+      <workItem from="1742832477159" duration="4000" />
+      <workItem from="1742978327443" duration="9619000" />
+      <workItem from="1743000382651" duration="1047000" />
+      <workItem from="1743261896463" duration="1117000" />
+      <workItem from="1743339286797" duration="9574000" />
+      <workItem from="1743430514943" duration="14149000" />
+      <workItem from="1743446418909" duration="445000" />
+      <workItem from="1743446875261" duration="1456000" />
+      <workItem from="1743614863973" duration="1000" />
+      <workItem from="1743764833413" duration="26000" />
+      <workItem from="1744434606135" duration="1219000" />
+      <workItem from="1744528155263" duration="1507000" />
+    </task>
+    <task id="LOCAL-00001" summary="new proj">
+      <option name="closed" value="true" />
+      <created>1741862222542</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741862222542</updated>
+    </task>
+    <task id="LOCAL-00002" summary="models">
+      <option name="closed" value="true" />
+      <created>1741867486912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741867486912</updated>
+    </task>
+    <task id="LOCAL-00003" summary="index not done">
+      <option name="closed" value="true" />
+      <created>1742677461183</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742677461183</updated>
+    </task>
+    <task id="LOCAL-00004" summary="css index not done">
+      <option name="closed" value="true" />
+      <created>1742987351674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987351674</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new proj" />
+    <MESSAGE value="models" />
+    <MESSAGE value="index not done" />
+    <MESSAGE value="css index not done" />
+    <option name="LAST_COMMIT_MESSAGE" value="css index not done" />
+  </component>
+</project>

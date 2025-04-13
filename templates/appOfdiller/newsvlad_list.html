@@ -7,12 +7,14 @@
     <li class="owners-article">
      <div class="owners-article-content">
         <h3 class="owners-article-title">{{ one.title }}</h3>
-        <p class="owners-article-body">{{ one.body }} </p>
+        <p class="owners-article-body">{{ one.body|linebreaksbr }} </p>
          </div>
     </li>
     {% endfor %}
     </ul>
     </div>
+{% endblock %}
+{% block news %}
 {% endblock %}
 {% block form %}
 {% endblock %}

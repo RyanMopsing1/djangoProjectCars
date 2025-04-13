@@ -6,12 +6,29 @@
     {% for one in news_list %}
     <li class="news-article">
         <h2 class="news-article-title">{{ one.title }}</h2>
-        <p class="news-article-summary">{{ one.body }} </p>
+        <p class="news-article-summary">{{ one.body|linebreaksbr }} </p>
         
     </li>
     {% endfor %}
     </ul>
     </div>
 {% endblock %}
+{% block news %}
+{% endblock news %}
 {% block form %}
+    <h1>Запись на тест драйв</h1>
+            <div id="form">
+        <form method="post">
+            {% csrf_token %}
+            <div id="form-group">
+                {{ form.title }}
+            {{ form.name }}<br>
+            {{ form.telephone }}<br>
+            {{ form.comment }}<br>
+            {{ form.prover }}<p>Согласен(а) на обработку персональных данных согласно <a href="">Политике конфиденциальности</a></p>
+            <button type="submit" class="btn btn-success">Отправить</button>
+            <span class="errorlist">{{ error }}</span>
+            </div>
+         </form>
+        </div>
 {% endblock %}

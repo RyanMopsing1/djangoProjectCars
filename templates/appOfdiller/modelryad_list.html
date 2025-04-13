@@ -6,15 +6,17 @@
         <ul class="model-list">
     {% for one in modelryad_list %}
     <li class="model-item">
-        <img src="{% static one.foto %}" alt="" width="100%" class="model-image">
         <a href="{{ one.get_absolute_url }}" class="model-link">
+        <img src="{% static one.foto %}" alt="" width="100%" class="model-image">
+        
         <h1 class="model-title">{{ one.title }}</h1>
         </a>
-    <p class="model-description">{{ one.description }}</p> 
     </li>
     {% endfor %}
     </ul>
     </div>
 {% endblock %}
+    {% block news %}
+ {% endblock news %}
 {% block form %}
 {% endblock %}
